@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nama+Font">
+</head>
+<body>
+    
+    <i class="fa-solid fa-bars"></i>
+    <div class="container">
+        <h2>To Do List</h2>
+        <form action="#">
+            <input type="text" id="new_text">
+            <button onclick="add()">Add</button>
+        </form>
+        <ul id="todo">
+        </ul>
+    </div>
+    <style>
+        .done {text-decoration: line-through;}
+    </style>
+    <script>
+        //Fitur Todo
+        //1. Menambahkan
+        //2. Coret kalau sudah seleai
+        //3. Menghapus
+        function add(){
+            const todo = document.getElementById("todo")
+            //1. Ambil nilai dari text
+            let newText = document.getElementById("new_text")
+            //2. Tambahkan list baru ke ul
+            let newTodo = "<li> <span onclick='toggle(this)'>" + newText.value + "</span>" + 
+                "<span onclick='removeItem(this)'> [x] </span>" +
+                "</li>"
+            todo.insertAdjacentHTML("afterbegin", newTodo)
+            //3. Kosongkan list
+            newText.value = ""
+        }
+        function toggle(el) {
+            el.classList.toggle("done")
+        }
+        function removeItem(el) {
+            el.parentElement.remove()
+        }
+    </script>
+</body>
+</html>

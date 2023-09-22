@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahyu Ambara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nama+Font">
+
+</head>
+<body>
+    <header>
+        <div class="logo">MY WEBSITE</div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active" target="_blank">Home</a></li>
+                <li><a href="todo.html" target="_blank">Task 1</a></li>
+                <li><a href="form.html" target="_blank">Task 2</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <img src="4.jpg" alt="Error">
+    <div class="content">
+
+        
+        <h2>Web Technology Assigments</h2>
+        <p>This website is a place to collect my assignments in the Web Technology course.<br>Thank you for visiting this website </p>
+        <p style="font-size: 14px;">Best regards,<br><b>Wahyu Ambara</b> <i class="fa-solid fa-hand-peace" style="color: rgb(255, 208, 0); font-size: 20px;"></i></p>
+        
+    </div>
+ 
+    <footer>
+        <p>Made wtih  <i class="fa-solid fa-heart" style="color: rgb(248, 59, 59);"></i>  by Wahyu Ambara | 2023 </p>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            $(".menu-toggle").click(function () {
+                $('nav').toggleClass('active');
+            })
+        })
+    </script>
+</body>
+</html>

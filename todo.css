@@ -1,0 +1,70 @@
+
+    body {
+        font-family: "Poppins", sans-serif;
+        background-color: #0ea5e9;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 400px;
+        margin: auto;
+        margin-top: 100px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+        flex-grow: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px 0 0 5px;
+    }
+
+    button {
+        padding: 10px 15px;
+        background-color: #0ea5e9;
+        color: #fff;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #2592c0;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .done {
+        text-decoration: line-through;
+        color: #888;
+    }
+
+    span {
+        cursor: pointer;
+    }
+
+/* Aturan Media Query Responsif */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 50px;
+    }
+}
